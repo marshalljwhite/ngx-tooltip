@@ -1,27 +1,25 @@
-> This repository is for demonstration purposes of how it can be implemented in Angular and is not maintaned. Please fork and maintain your own version of this repository.
-
-# ngx-tooltip
+# ng2-tooltip
 
 Simple tooltip control for your angular2 applications using bootstrap3. Does not depend of jquery.
 If you want to use it without bootstrap - simply create proper css classes. Please star a project if you liked it, or create an issue if you have problems with it.
 
-![angular 2 tooltip](https://raw.githubusercontent.com/pleerock/ngx-tooltip/master/resources/tooltip-example.png)
+![angular 2 tooltip](https://raw.githubusercontent.com/pleerock/ng2-tooltip/master/resources/tooltip-example.png)
 
 ## Installation
 
 1. Install npm module:
 
-    `npm install ngx-tooltip --save`
+    `npm install ng2-tooltip --save`
 
 2. If you are using system.js you may want to add this into `map` and `package` config:
 
     ```json
     {
         "map": {
-            "ngx-tooltip": "node_modules/ngx-tooltip"
+            "ng2-tooltip": "node_modules/ng2-tooltip"
         },
         "packages": {
-            "ngx-tooltip": { "main": "index.js", "defaultExtension": "js" }
+            "ng2-tooltip": { "main": "index.js", "defaultExtension": "js" }
         }
     }
     ```
@@ -63,7 +61,7 @@ Example of usage with dynamic html content:
 
 ```typescript
 import {Component} from "@angular/core";
-import {TooltipModule} from "ngx-tooltip";
+import {TooltipModule} from "ng2-tooltip";
 
 @Component({
     selector: "app",
@@ -112,5 +110,5 @@ export class AppModule {
 }
 ```
 
-Take a look on samples in [./sample](https://github.com/pleerock/ngx-tooltip/tree/master/sample) for more examples of
+Take a look on samples in [./sample](https://github.com/pleerock/ng2-tooltip/tree/master/sample) for more examples of
 usages.
